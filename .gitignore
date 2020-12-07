@@ -2,3 +2,7 @@
 ./school_districts/*.csv
 .DS_Store
 *.csv
+.DS_Store
+school_districts/.DS_Store
+*.csv
+*.csv
