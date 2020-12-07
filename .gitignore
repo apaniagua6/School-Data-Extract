@@ -1,3 +1,4 @@
 ./schools/*.csv
 ./school_districts/*.csv
 .DS_Store
+*.csv
