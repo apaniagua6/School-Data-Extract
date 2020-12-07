@@ -2,7 +2,7 @@
 
 Thank you to https://educationdata.urban.org/ for providing a clean data sets that  harmonizes data from all major federal datasets, including the US Department of Education Common Core of Data, the US Department of Education Civil Rights Data Collection, the US Department of Education EDFacts, the US Census Bureau Small Area Income and Poverty Estimates, the US Department of Education Integrated Postsecondary Education Data System, the US Department of Education College Scorecard, and the National Historical Geographic Information System.
 
-Since the data set's are in the hundreds of Megabytes and in the gigabytes this repository can serve as the inital extract point for any ETL workflow. 
+Since the data set's are in the hundreds of Megabytes and in the gigabytes this repository can serve as the inital extract point for any ETL workflow.  d
 
 ## Parquet files
 
