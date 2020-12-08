@@ -74,6 +74,7 @@ todo: provide further information of types of statistics and graphs that can be 
 
 
 ## District Directory data (CCD)
+1. school_districts_lea_directory_1986_2018_df_pyarrow.parquet.gzip
 
 Contains school district (local education agency identification)-level geographic and mailing information, agency type, highest and lowest grades offered, special education students and English language learners, and full-time equivalent teachers and other staff.
 
