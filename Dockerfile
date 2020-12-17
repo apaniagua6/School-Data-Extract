@@ -2,8 +2,9 @@ FROM python:3.9-slim
 
 ENV PYTHONUNBUFFERED True
 
-# Add local code to the image instead of fetching from pypi.
-COPY . .
+ENV APP_HOME /app
+WORKDIR $APP_HOME
+COPY . ./
 
 RUN pip install -r requirements.txt
 
