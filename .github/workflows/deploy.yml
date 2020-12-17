@@ -22,7 +22,7 @@ jobs:
       with:
         node-version: '12'
     - name: Install Python dependencies
-      run: |
+      run: |-
         pip install -r requirements.txt
     - name: Build databases
       run: |-
