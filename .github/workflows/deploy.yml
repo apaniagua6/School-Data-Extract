@@ -1,12 +1,6 @@
 name: Deploy demo
 
-on:
-  push:
-    branches:
-    - test
-  workflow_dispatch:
-  schedule:
-    - cron:  '15 0 * * *'
+on: push
 
 jobs:
   scheduled:
