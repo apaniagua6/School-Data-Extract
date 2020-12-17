@@ -9,4 +9,4 @@ COPY . .
 RUN pip install -r requirements.txt
 
 EXPOSE 8001
-CMD datasette district_data_sample.db
+CMD datasette -p 8001 -h 0.0.0.0 district_data_sample.db
