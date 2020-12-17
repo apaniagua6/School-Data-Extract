@@ -4,15 +4,10 @@ on:
   push:
     branches:
     - test
-  workflow_dispatch:
-  schedule:
-    - cron:  '15 0 * * *'
 jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out this repo
-      uses: actions/checkout@v2
     - name: Deploy to Heroku
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
