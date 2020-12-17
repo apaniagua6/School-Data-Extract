@@ -13,20 +13,6 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
-    - name: Set up Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12'
-    - name: Install Python dependencies
-      run: |-
-        pip install -r requirements.txt
-    - name: Build databases
-      run: |-
-        csvs-to-sqlite data_lake/district/sample_csv district_sample_csv.db
     - name: Deploy to Heroku
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
