@@ -39,4 +39,4 @@ COPY --from=build /usr/lib/x86_64-linux-gnu /usr/lib/x86_64-linux-gnu
 ENV LD_LIBRARY_PATH=/usr/local/lib
 
 EXPOSE 8001
-CMD ["datasette"]
+CMD ["datasette /datasette/district_data_sample.db"]
