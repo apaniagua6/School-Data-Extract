@@ -3,10 +3,12 @@ name: Deploy demo
 on:
   push:
     branches:
-      - test
-
+    - test
+  workflow_dispatch:
+  schedule:
+    - cron:  '15 0 * * *'
 jobs:
-  build:
+  scheduled:
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
