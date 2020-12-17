@@ -1,9 +1,12 @@
 name: Deploy demo
 
-on: push
+on:
+  push:
+    branches:
+      - test
 
 jobs:
-  scheduled:
+  build:
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
@@ -34,5 +37,5 @@ jobs:
           --install=datasette-jellyfish \
           --install=datasette-graphql \
           --install='datasette-copyable>=0.2' \
-          --version-note=$LATEST_DATASETTE \
-          --branch=$LATEST_DATASETTE
+          --version-note=nonotes \
+          --branch=test
