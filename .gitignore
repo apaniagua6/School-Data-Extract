@@ -1,8 +1,2 @@
-./schools/*.csv
-./school_districts/*.csv
 .DS_Store
-*.csv
-.DS_Store
-school_districts/.DS_Store
-*.csv
-*.csv
+data_lake/district/complete_csv/*.csv
