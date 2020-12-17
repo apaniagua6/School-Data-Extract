@@ -32,6 +32,7 @@ jobs:
         npm install -g heroku
         heroku plugins:install heroku-builds
         datasette publish heroku district_sample_csv.db \
+          -m metadata.json \
           -n high-school-datasette \
           --install=datasette-vega \
           --install=datasette-jellyfish \
