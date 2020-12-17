@@ -1,7 +1,6 @@
-FROM python:3.7.2-slim-stretch 
+FROM python:3.9-slim
 
-ENV PORT 8001
-ENV HOST 0.0.0.0
+ENV PYTHONUNBUFFERED True
 
 # Add local code to the image instead of fetching from pypi.
 COPY . .
