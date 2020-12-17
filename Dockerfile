@@ -25,7 +25,7 @@ RUN wget "http://www.gaia-gis.it/gaia-sins/spatialite-tools-sources/spatialite-t
 # Add local code to the image instead of fetching from pypi.
 COPY . /datasette
 
-RUN pip install /datasette
+RUN pip install -r /datasette/requirements.txt
 
 FROM python:3.7.2-slim-stretch
 
