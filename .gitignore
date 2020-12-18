@@ -1,2 +1,4 @@
 .DS_Store
 data_lake/district/complete_csv/*.csv
+data_lake/school_level/complete_csv/*.csv
+data_lake/school_level/complete_parquet/*.gzip
